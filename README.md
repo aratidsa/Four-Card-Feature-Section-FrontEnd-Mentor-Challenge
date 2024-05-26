@@ -20,12 +20,16 @@ In this small project, build out this feature section and get it looking as clos
 
 ### Screenshot
 - Desktop
-  
+    
+  ![Screenshot 2024-05-26 120438](https://github.com/aratidsa/Four-Card-Feature-Section-FrontEnd-Mentor-Challenge/assets/128802362/c7619841-8481-41c7-a1b9-d2701bed13a6)
+
 - Mobile
+  
+   ![Screenshot 2024-05-26 120540](https://github.com/aratidsa/Four-Card-Feature-Section-FrontEnd-Mentor-Challenge/assets/128802362/e16a7156-905e-4d89-98e6-b462ffdf9ba6)
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://github.com/aratidsa/Four-Card-Feature-Section-FrontEnd-Mentor-Challenge
 - Live Site URL: 
 
 ## My process
