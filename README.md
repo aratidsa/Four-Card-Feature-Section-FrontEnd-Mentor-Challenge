@@ -30,7 +30,7 @@ In this small project, build out this feature section and get it looking as clos
 ### Links
 
 - Solution URL: https://github.com/aratidsa/Four-Card-Feature-Section-FrontEnd-Mentor-Challenge
-- Live Site URL: 
+- Live Site URL: https://four-card-section-design.netlify.app/
 
 ## My process
 
