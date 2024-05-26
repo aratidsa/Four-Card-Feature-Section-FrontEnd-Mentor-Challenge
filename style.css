@@ -1,0 +1,250 @@
+/* ----- RESET -------- */
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+img{
+    max-width: 100%;
+    display:block;
+}
+h1,h2{
+    margin:0;
+}
+
+/* ----- CUSTOM PROPERTIES -------- */
+:root{
+    /* ----- COLOR ----- */
+    --clr-red:hsl(0, 78%, 62%);
+    --clr-cyan:hsl(180, 62%, 55%);
+    --clr-orange:hsl(34, 97%, 64%);
+    --clr-blue:hsl(212, 86%, 64%);
+    --clr-veryDarkBlue:hsl(234, 12%, 34%);
+    --clr-grayishBlue:hsl(229, 6%, 66%);
+    --clr-veryLightGray:hsl(0, 0%, 98%);
+    --clr-white:hsl(180, 100%, 100%);
+
+    /* ----- FONT SIZE ----- */
+    --fs-36:2.25rem;
+    --fs-24:1.5rem;  
+    --fs-20:1.25rem; 
+    --fs-15:0.94rem;
+    --fs-13:0.81rem;
+    --fs-12:0.75rem;
+
+    /* ----- FONT WEIGHT ----- */
+    --fw-200:200;
+    --fw-400:400;
+    --fw-600:600;
+
+    /* ----- FONT FAMILY ----- */
+    --ff-poppins:"Poppins", sans-serif;
+}
+
+/* ----- BODY -------- */
+body{
+    font-size:var(--fs-15);
+    font-weight:var(--fw-400);
+    font-family:var(--ff-poppins);
+    line-height:1.6;
+    background-color:var(--clr-veryLightGray);    
+}
+
+/* ----- COMPONENTS -------- */
+.container{
+    width:84%;
+    font-size:var(--fs-15);
+    margin:0 auto;
+}
+/* ------- Title & Heading ----------- */
+.title-content{
+    margin-top:26%;
+    text-align: center;
+}
+.title-heading{
+    font-size:var(--fs-24); 
+    color:var(--clr-veryDarkBlue);
+    margin:0;
+    font-weight:var(--fw-200);
+}
+.tile-label{
+    font-size:var(--fs-24);
+    color:var(--clr-veryDarkBlue);
+    font-weight:var(--fw-600);
+}
+.description{
+    font-size:var(--fs-15);
+    color:var(--clr-grayishBlue);
+}
+/* ------- Branches Container ----------- */
+.branches-container{
+    margin-top:24%;
+    width:100%;
+}
+/* ------- Branche Box ----------- */
+.branch-box{
+    padding:1.44rem 1.88rem 6.5rem 1.88rem;
+    border-radius:0.63rem;
+    background-color: var(--clr-white);
+    box-shadow: 0.31rem 0.94rem 1.5rem hsl(227, 22%, 92%);
+    width:80%;
+}
+/* ------- Supervisor Box ----------- */
+.supervisor-box{
+    border-top:0.31rem solid var(--clr-cyan);
+    margin-bottom:1.44rem;
+}
+/* ------- Team Builder Box ----------- */
+.team-builder-box{
+    border-top:0.31rem solid var(--clr-red);
+    margin-bottom:1.31rem;
+}
+/* ------- Karma Box ----------- */
+.karma-box{
+    border-top:0.31rem solid var(--clr-orange);
+    margin-bottom:1.38rem;
+}
+/* ------- Calculator Box ----------- */
+.calculator-box{
+    border-top:0.31rem solid var(--clr-blue);
+    margin-bottom:1.56rem;
+}
+/* ------- Branch Title ----------- */
+.branch-title{
+    font-size:var(--fs-20);
+    font-weight:var(--fw-600);
+    color:var(--clr-veryDarkBlue);
+    margin-bottom:-0.63rem;
+}
+/* ------- Branch Description ----------- */
+.branch-description{
+    font-size:var(--fs-13);
+    color:var(--clr-grayishBlue);
+}
+/* ------- Branch Icon ----------- */
+.branch-icon{
+    float:right;
+    width:21%;
+    padding-top:1.25rem;
+    max-width:3.25rem;
+}
+/* ------- Footer ----------- */
+footer{
+    text-align: center;
+    font-size:var(--fs-12);
+    font-weight: var(--fw-600);
+}
+.attribution a{
+    text-decoration: none;
+    color:var(--clr-red);
+}
+
+/* ------- Media Screen minimum width 600px ----------- */
+@media (min-width:600px){
+    /* ----- COMPONENTS -------- */
+    .title-content{
+        margin-top:7%;
+        }
+    .title-heading{
+        font-size:2.28rem;  
+        margin-bottom:-0.63rem;
+        }
+    .tile-label{
+        font-size:var(--fs-36);  
+        margin-bottom:0.81rem; 
+        }
+    .description{
+        width:49%;
+        margin:0 auto; 
+        }
+}
+
+/* ------- Media Screen minimum width 600px and maximum width 899px ----------- */
+@media (min-width:600px) and (max-width:899px) {
+    /* ----- COMPONENTS -------- */
+    .branches-container{
+        margin-top:10%;
+        margin-left:10%;
+    }
+    .branch-box{
+        width:70%;
+    }
+}
+
+/* ------- Media Screen minimum width 900px ----------- */
+@media (min-width:900px){
+    /* ----- COMPONENTS -------- */
+    .grid-container{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        column-gap:0.63rem;
+    }
+    .branches-container{
+        margin-top:6%;
+    }
+    .supervisor-box,.calculator-box{
+        margin-bottom:0px;
+        height:22%;
+        padding:1.63rem 1.88rem 6.13rem 1.88rem;
+        margin-top:38.5%;
+    }
+    .team-builder-box,.karma-box{
+        padding:1.75rem 1.88rem 7.5rem 1.88rem;        
+    }
+    .team-builder-box{
+        margin-bottom:1.75rem;   
+    }
+    .karma-box{
+        margin-bottom:1.38rem;
+    }
+    .calculator-box{
+        margin-left:0.75rem;
+    }
+    .branch-title{
+        margin-bottom:-0.19rem;
+    }     
+    .branch-icon{
+        padding-top:1.56rem;   
+    }
+}
+
+/* ------- Media Screen minimum width 900px and maximum width 1200px ----------- */
+@media (min-width:900px) and (max-width:1200px) {
+    /* ----- COMPONENTS -------- */
+    .supervisor-box{
+        margin-left:-1.25rem;
+    }
+    .team-builder-box{
+        margin-left:-0.31rem;     
+    }
+    .karma-box{
+        margin-left:-0.31rem;
+    }
+    .branch-icon{
+        width:31%;
+        max-width:3.25rem; 
+    }
+}
+
+/* ------- Media Screen minimum width 1200px ----------- */
+@media (min-width:1200px) {
+    /* ----- COMPONENTS -------- */
+    .container{
+       width:73%;
+    }
+    .branches-container{
+        width:100%;
+    }
+    .team-builder-box{
+        margin-left:0.5rem;    
+    }
+    .karma-box{
+        margin-left:0.5rem;
+    }
+    .branch-icon{
+        width:21%;
+        max-width:4.69rem;
+    }
+}
+
+
